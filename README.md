@@ -1,0 +1,36 @@
+# react-threads-card
+
+[![NPM](https://img.shields.io/npm/v/react-threads-card.svg)](https://www.npmjs.com/package/react-threads-card)
+
+A Threads Card component you can use easily in your React projects. It doesn't rely on the Threads API but instead lets you feed in all information about the threads you're displaying. This way you can create cards for fictional Threads posts, or ones that have been deleted.
+
+---
+
+## Installation
+
+```bash
+npm i react-threads-card
+# or
+yarn add react-threads-card
+```
+
+## Features
+
+- [x] Responsive component
+- [x] Component scales to fit inside any container
+- [x] Light and dark themes
+- [x] Dark mode preference support
+- [x] Gradient and blurred container styles
+- [x] styled-components and emotion support
+- [x] TypeScript support
+- [x] Support for images in posts
+- [x] Support for verified Threads accounts
+- [x] Support for @mentions in posts
+- [x] Support for links in posts
+- [x] Support for hashtags in posts
+- [x] Display number of replies, reposts and likes
+
+## Server-side rendering
+
+`react-threads-card` can only be rendered on the client side as it loads its CSS directly into the DOM.
+To make it work with SSR, try importing the package dynamically.

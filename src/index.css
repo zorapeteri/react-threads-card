@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.react-threads-card__username-in-post,
+.react-threads-card__hashtag-in-post,
+.react-threads-card__link-in-post {
+  color: var(--threads-card-accent);
+  text-decoration: none;
+}
+
+.react-threads-card__username-in-post:hover,
+.react-threads-card__hashtag-in-post:hover,
+.react-threads-card__link-in-post:hover {
+  text-decoration: underline;
+}

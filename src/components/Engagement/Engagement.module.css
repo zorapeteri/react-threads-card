@@ -1,0 +1,24 @@
+.engagement {
+  grid-column: 1;
+  color: var(--threads-card-secondary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4em;
+  font-size: 0.76em;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.engagementItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25em;
+  cursor: default;
+}
+
+.engagementItem svg {
+  width: 1.18em;
+  height: 1.18em;
+}
