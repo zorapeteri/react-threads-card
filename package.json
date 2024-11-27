@@ -1,7 +1,7 @@
 {
   "name": "react-threads-card",
   "description": "A React component to display Threads posts",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
