@@ -1,6 +1,4 @@
 import { useRef, useMemo, HTMLAttributes } from 'react';
-import useThreadsLogo from '../../hooks/useThreadsLogo';
-import useFontSize from '../../hooks/useFontSize';
 import classNameUtil from '../../utils/className';
 import './Container.css';
 import getCSSVariables from '../../utils/getCSSVariables';
@@ -17,11 +15,7 @@ type ContainerProps = HTMLAttributes<HTMLDivElement> & {
   className?: string;
 } & Pick<
     ThreadsCardProps,
-    | 'theme'
-    | 'colors'
-    | 'gradientBackground'
-    | 'blurredBackground'
-    | 'fitInsideContainer'
+    'theme' | 'colors' | 'gradientBackground' | 'blurredBackground'
   >;
 
 const Container = ({
@@ -30,12 +24,9 @@ const Container = ({
   colors = {},
   gradientBackground,
   blurredBackground,
-  fitInsideContainer = false,
   ...rest
 }: ContainerProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const threadsLogo = useThreadsLogo(containerRef);
-  useFontSize(fitInsideContainer, containerRef);
 
   const theme = useTheme(rest.theme);
 
@@ -54,10 +45,8 @@ const Container = ({
       ref={containerRef}
       {...classNameUtil(
         globalClassName('container'),
-        fitInsideContainer && css.fitInsideContainer,
         className,
         css.container,
-        threadsLogo,
         gradientBackground && css.gradientBackground,
         gradientBackground && globalClassName('gradientBackground'),
         blurredBackground && css.blurredBackground,

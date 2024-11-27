@@ -30,7 +30,6 @@ export type ThreadsCardProps = React.HTMLAttributes<HTMLDivElement> & {
   colors?: ThreadsCardColors;
   gradientBackground?: boolean;
   blurredBackground?: boolean;
-  fitInsideContainer?: boolean;
   showTime?: boolean;
   showEngagement?: boolean;
   showThreadsLogo?: boolean;
