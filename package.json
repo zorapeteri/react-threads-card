@@ -1,6 +1,6 @@
 {
   "name": "react-threads-card",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A React component to display Threads posts",
   "main": "lib/index.js",
   "scripts": {
