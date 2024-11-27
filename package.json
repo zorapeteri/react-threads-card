@@ -16,7 +16,8 @@
   "module": "./dist/react-threads-card.js",
   "exports": {
     ".": {
-      "import": "./dist/react-threads-card.js"
+      "import": "./dist/react-threads-card.js",
+      "require": "./dist/react-threads-card.umd.cjs"
     },
     "./style.css": "./dist/react-threads-card.css"
   },
