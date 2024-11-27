@@ -1,7 +1,6 @@
-import { ThreadsCardProps } from 'index';
-import React from 'react';
-import formatPostTime from 'utils/formatPostTime';
-import globalClassName from 'utils/globalClassName';
+import { ThreadsCardProps } from '../../main';
+import formatPostTime from '../../utils/formatPostTime';
+import globalClassName from '../../utils/globalClassName';
 import css from './Time.module.css';
 
 type TimeProps = Pick<ThreadsCardProps, 'time' | 'permalink'>;

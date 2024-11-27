@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+
 // source: https://usehooks.com/useMedia/
 
 import { useState, useEffect } from 'react';
@@ -23,9 +25,10 @@ const useMedia = <T>(queries: string[], values: T[], defaultValue: T) => {
       // Set a listener for each media query with above handler as callback.
       mediaQueryLists.forEach((mql) => mql.addListener(handler));
       // Remove listeners on cleanup
-      return () => mediaQueryLists.forEach((mql) => mql.removeListener(handler));
+      return () =>
+        mediaQueryLists.forEach((mql) => mql.removeListener(handler));
     },
-    [], // Empty array ensures effect is only run on mount and unmount
+    [] // Empty array ensures effect is only run on mount and unmount
   );
   return value;
 };

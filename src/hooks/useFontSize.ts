@@ -1,12 +1,9 @@
-/* eslint-disable no-plusplus, no-param-reassign */
-
 import { useEffect, RefObject } from 'react';
-import binarySearch from 'utils/binarySearch';
+import binarySearch from '../utils/binarySearch';
 import useResizeObserver from 'use-resize-observer';
 
 function isOverflowing(el: HTMLElement) {
-  return el.clientWidth < el.scrollWidth
-        || el.clientHeight < el.scrollHeight;
+  return el.clientWidth < el.scrollWidth || el.clientHeight < el.scrollHeight;
 }
 
 function canOverflow(el: HTMLElement) {
@@ -25,7 +22,12 @@ function setFontSize(el: HTMLElement, fontSize: number) {
 }
 
 function getFontSize(el: HTMLElement) {
-  return parseFloat(window.getComputedStyle(el, null).getPropertyValue('font-size').replace('px', ''));
+  return parseFloat(
+    window
+      .getComputedStyle(el, null)
+      .getPropertyValue('font-size')
+      .replace('px', '')
+  );
 }
 
 function findFontSizeBinary(el: HTMLElement) {
@@ -41,7 +43,10 @@ function calculateAndApplyFontSize(el: HTMLElement | null | undefined) {
   }
 }
 
-const useFontSize = (fitInsideContainer: boolean, ref: RefObject<HTMLDivElement>) => {
+const useFontSize = (
+  fitInsideContainer: boolean,
+  ref: RefObject<HTMLDivElement>
+) => {
   const handleResize = () => {
     if (ref?.current && canOverflow(ref?.current)) {
       calculateAndApplyFontSize(ref?.current);

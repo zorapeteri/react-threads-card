@@ -1,5 +1,4 @@
-import React from 'react';
-import { ThreadsCardProps } from 'index';
+import { ThreadsCardProps } from '../../main';
 import ProfilePicture from '../ProfilePicture';
 import Username from '../Username';
 import css from './UserDetails.module.css';

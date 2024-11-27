@@ -1,5 +1,5 @@
-import { ThreadsCardColors, ThreadsCardTheme } from 'themes';
-import { getRGB, rgba } from 'utils/colors';
+import { ThreadsCardColors, ThreadsCardTheme } from '../themes';
+import { getRGB, rgba } from '../utils/colors';
 
 const useGradientBackground = (
   gradientBackground: boolean | undefined,

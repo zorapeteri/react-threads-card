@@ -23,19 +23,19 @@ yarn add react-threads-card
 
 ## Features
 
-- [x] Responsive component
-- [x] Component scales to fit inside any container
-- [x] Light and dark themes
-- [x] Dark mode preference support
-- [x] Gradient and blurred container styles
-- [x] styled-components and emotion support
-- [x] TypeScript support
-- [x] Support for images in posts
-- [x] Support for verified Threads accounts
-- [x] Support for @mentions in posts
-- [x] Support for links in posts
-- [x] Support for hashtags in posts
-- [x] Display number of replies, reposts and likes
+- Responsive component
+- Component scales to fit inside any container
+- Light and dark themes
+- Dark mode preference support
+- Gradient and blurred container styles
+- styled-components and emotion support
+- TypeScript support
+- Support for images in posts
+- Support for verified Threads accounts
+- Support for @mentions in posts
+- Support for links in posts
+- Support for hashtags in posts
+- Display number of replies, reposts and likes
 
 ## Server-side rendering
 

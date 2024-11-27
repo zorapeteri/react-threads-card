@@ -1,7 +1,6 @@
-import React from 'react';
-import className from 'utils/className';
-import globalClassName from 'utils/globalClassName';
-import { ThreadsCardProps } from 'index';
+import className from '../../utils/className';
+import globalClassName from '../../utils/globalClassName';
+import { ThreadsCardProps } from '../../main';
 import css from './ThreadsLogo.module.css';
 
 type ThreadsLogoProps = Pick<ThreadsCardProps, 'permalink'>;

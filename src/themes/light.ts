@@ -1,4 +1,4 @@
-import { ThreadsCardTheme } from 'themes';
+import { ThreadsCardTheme } from '.';
 
 const LightTheme: ThreadsCardTheme = {
   primary: '#000000',

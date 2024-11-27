@@ -1,8 +1,7 @@
-import React from 'react';
-import className from 'utils/className';
-import globalClassName from 'utils/globalClassName';
-import formatEngagement from 'utils/formatEngagement';
-import { ThreadsCardProps } from 'index';
+import className from '../../utils/className';
+import globalClassName from '../../utils/globalClassName';
+import formatEngagement from '../../utils/formatEngagement';
+import { ThreadsCardProps } from '../../main';
 import css from './Engagement.module.css';
 import EngagementIcons from './EngagementIcons';
 

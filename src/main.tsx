@@ -1,13 +1,12 @@
-import React from 'react';
-import UserDetails from 'components/UserDetails';
-import Time from 'components/Time';
-import Text from 'components/Text';
-import Container from 'components/Container';
-import Engagement from 'components/Engagement';
-import './index.css';
-import Images from 'components/Images';
+import './main.css';
 import { ThemeOption, ThreadsCardColors } from './themes';
-import ThreadsLogo from 'components/ThreadsLogo';
+import Container from './components/Container';
+import Engagement from './components/Engagement';
+import Images from './components/Images';
+import Text from './components/Text';
+import ThreadsLogo from './components/ThreadsLogo';
+import Time from './components/Time';
+import UserDetails from './components/UserDetails';
 
 export type ThreadsCardProps = React.HTMLAttributes<HTMLDivElement> & {
   author: {

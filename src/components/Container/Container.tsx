@@ -1,19 +1,19 @@
-import React, { useRef, useMemo, HTMLAttributes } from 'react';
-import useThreadsLogo from 'hooks/useThreadsLogo';
-import useFontSize from 'hooks/useFontSize';
-import classNameUtil from 'utils/className';
+import { useRef, useMemo, HTMLAttributes } from 'react';
+import useThreadsLogo from '../../hooks/useThreadsLogo';
+import useFontSize from '../../hooks/useFontSize';
+import classNameUtil from '../../utils/className';
 import './Container.css';
-import getCSSVariables from 'utils/getCSSVariables';
-import themes from 'themes';
-import globalClassName from 'utils/globalClassName';
-import useGradientBackground from 'hooks/useGradientBackground';
-import useBlurredBackground from 'hooks/useBlurredBackground';
-import useTheme from 'hooks/useTheme';
-import { ThreadsCardProps } from 'index';
+import getCSSVariables from '../../utils/getCSSVariables';
+import themes from '../../themes';
+import globalClassName from '../../utils/globalClassName';
+import useGradientBackground from '../../hooks/useGradientBackground';
+import useBlurredBackground from '../../hooks/useBlurredBackground';
+import useTheme from '../../hooks/useTheme';
+import { ThreadsCardProps } from '../../main';
 import css from './Container.module.css';
 
 type ContainerProps = HTMLAttributes<HTMLDivElement> & {
-  children: any;
+  children: React.ReactNode;
   className?: string;
 } & Pick<
     ThreadsCardProps,

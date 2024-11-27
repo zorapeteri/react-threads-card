@@ -1,4 +1,6 @@
-import { ThreadsCardColors, ThreadsCardTheme } from 'themes';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+import { ThreadsCardColors, ThreadsCardTheme } from '../themes';
 
 const colorPrefix = '--threads-card-';
 

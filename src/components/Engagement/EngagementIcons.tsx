@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default {
   replies: () => (
     <svg viewBox="0 0 18 18">

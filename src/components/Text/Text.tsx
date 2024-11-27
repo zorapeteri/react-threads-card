@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
-import className from 'utils/className';
-import globalClassName from 'utils/globalClassName';
-import useLinksUsernamesHashtags from 'hooks/useLinksUsernamesHashtags';
-import { ThreadsCardProps } from 'index';
+import { useRef } from 'react';
+import className from '../../utils/className';
+import globalClassName from '../../utils/globalClassName';
+import useLinksUsernamesHashtags from '../../hooks/useLinksUsernamesHashtags';
+import { ThreadsCardProps } from '../../main';
 import css from './Text.module.css';
 
 type TextProps = Pick<ThreadsCardProps, 'text'>;

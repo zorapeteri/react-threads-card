@@ -1,4 +1,4 @@
-import { ThreadsCardTheme } from 'themes';
+import { ThreadsCardTheme } from '.';
 
 const DarkTheme: ThreadsCardTheme = {
   primary: '#F3F5F7',
