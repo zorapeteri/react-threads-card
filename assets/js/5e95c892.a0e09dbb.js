@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_threads_card_docs=self.webpackChunkreact_threads_card_docs||[]).push([[647],{7121:(e,r,s)=>{s.r(r),s.d(r,{default:()=>n});s(6540);var a=s(4164),c=s(1003),d=s(7559),t=s(2831),u=s(1217),h=s(4848);function n(e){return(0,h.jsx)(c.e3,{className:(0,a.A)(d.G.wrapper.docsPages),children:(0,h.jsx)(u.A,{children:(0,t.v)(e.route.routes)})})}}}]);
