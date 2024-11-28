@@ -1,0 +1,141 @@
+---
+sidebar_position: 3
+slug: /style
+---
+
+# Styling
+
+## Themes
+
+The `theme` prop can be set to `light` or `dark`. Try it out!
+
+```jsx live
+<ThreadsCard {...xFactorPost} theme="dark" />
+```
+
+## Colors
+
+The colors of the pre-defined themes can be extended.
+
+<table>
+  <thead>
+    <tr>
+      <th>Color setting</th>
+      <th>Used</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>primary</td>
+      <td>Author name, post text</td>
+    </tr>
+    <tr>
+      <td>secondary</td>
+      <td>Engagement</td>
+    </tr>
+    <tr>
+      <td>accent</td>
+      <td>Verified badge, mentions, links, hashtags</td>
+    </tr>
+    <tr>
+      <td>muted</td>
+      <td>Time</td>
+    </tr>
+    <tr>
+      <td>background</td>
+      <td>Background color of the container</td>
+    </tr>
+    <tr>
+      <td>border</td>
+      <td>Border color of the container</td>
+    </tr>
+  </tbody>
+</table>
+
+```jsx live
+<ThreadsCard
+  className="with-background-image"
+  {...xFactorPost}
+  colors={{
+    primary: '#ffffff',
+    secondary: '#a9e0fe',
+    accent: '#1C26FF',
+    muted: '#FDFEEC',
+    background: '#3AAFB9',
+    border: '#ffff00',
+  }}
+/>
+```
+
+## Gradient background
+
+Passing in the `gradientBackground` prop to the component will create a gradient background to the container based on the background color of the active theme.
+
+```jsx live
+<ThreadsCard
+  className="with-background-image"
+  {...xFactorPost}
+  theme="light"
+  gradientBackground
+/>
+```
+
+## Blurred background
+
+Passing in the `blurredBackground` prop to the component will create a blurred effect on the background of the container.
+
+```jsx live
+<ThreadsCard
+  className="with-background-image"
+  {...xFactorPost}
+  theme="light"
+  blurredBackground
+/>
+```
+
+## Accessing the DOM node
+
+Any prop that's a valid HTML5 attribute can be passed in to the component, and its main div will get those attributes, including `className` and `style`. This way the component can easily be used with libraries like styled components.
+
+```jsx live
+<ThreadsCard
+  className="with-background-image"
+  {...xFactorPost}
+  style={{
+    transform: 'rotate(5deg)',
+  }}
+/>
+```
+
+## Classnames
+
+The component intentionally exposes classnames on its elements for you to control from your own stylesheet. All classnames start with the `react-threads-card` prefix.
+
+<details>
+  <summary>Exposed classnames</summary>
+  <ul>
+    <li>react-threads-card__container</li>
+    <li>react-threads-card__author-username</li>
+    <li>react-threads-card__author-image</li>
+    <li>react-threads-card__verified-badge</li>
+    <li>react-threads-card__protected-icon</li>
+    <li>react-threads-card__time</li>
+    <li>react-threads-card__source</li>
+    <li>react-threads-card__text</li>
+    <li>react-threads-card__imageContainer</li>
+    <li>react-threads-card__image</li>
+    <li>react-threads-card__threads-logo</li>
+    <li>react-threads-card__engagement-container</li>
+    <li>react-threads-card__replies</li>
+    <li>react-threads-card__reposts</li>
+    <li>react-threads-card__likes</li>
+  </ul>
+
+</details>
+
+```css
+/* example */
+.react-threads-card__username {
+  display: none;
+}
+```
