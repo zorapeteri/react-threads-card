@@ -22,6 +22,7 @@ export type ThreadsCardProps = React.HTMLAttributes<HTMLDivElement> & {
   text: string;
   images?: {
     src: string;
+    alt?: string;
   }[];
   time: Date | string;
   permalink?: string;
