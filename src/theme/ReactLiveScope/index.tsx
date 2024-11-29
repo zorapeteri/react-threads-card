@@ -15,7 +15,7 @@ const xFactorPost = {
     replies: 2,
     reposts: 0,
   },
-  time: new Date('2024/05/27 11:09Z'),
+  time: new Date('2024-05-27T11:09:00Z'),
 };
 
 const ThreadsCard = (props) => {
